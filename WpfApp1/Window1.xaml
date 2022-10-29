@@ -1,0 +1,68 @@
+﻿<Window x:Class="WpfApp1.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Window1" Height="660.59" Width="800">
+    <Grid x:Name="MainGrid" HorizontalAlignment="Left" Width="792">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="214*"/>
+            <RowDefinition Height="205*"/>
+        </Grid.RowDefinitions>
+        <GridSplitter HorizontalAlignment="Left" Height="620" Margin="182,0,0,0" VerticalAlignment="Top" Width="6" Grid.RowSpan="2"/>
+        <GridSplitter HorizontalAlignment="Left" Height="6" Margin="189,14,0,0" Grid.Row="1" VerticalAlignment="Top" Width="598" RenderTransformOrigin="0.5,0.5">
+            <GridSplitter.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </GridSplitter.RenderTransform>
+        </GridSplitter>
+        <Grid HorizontalAlignment="Left" Height="332" Margin="199,0,0,0" VerticalAlignment="Top"  Width="431" Grid.RowSpan="2">
+            <Label Content="设备名称：" HorizontalAlignment="Left" Margin="0,10,0,0"  VerticalAlignment="Top" Height="25" Width="96"/>
+            <Label Content="设备序号：" HorizontalAlignment="Left" Margin="0,40,0,0"  VerticalAlignment="Top" Height="25" Width="96"/>
+            <Label Content="IP与Port："   HorizontalAlignment="Left" Margin="0,70,0,0"  VerticalAlignment="Top" Height="25" Width="96"/>
+            <Label Content="用户名称：" HorizontalAlignment="Left" Margin="0,100,0,0" VerticalAlignment="Top" Height="25" Width="96"/>
+            <Label Content="课程类型：" HorizontalAlignment="Left" Margin="0,130,0,0" VerticalAlignment="Top" Height="25" Width="96"/>
+            <Label Content="课程名称：" HorizontalAlignment="Left" Margin="0,160,0,0" VerticalAlignment="Top" Height="25" Width="96"/>
+            <Label Content="课程时间：" HorizontalAlignment="Left" Margin="0,190,0,0" VerticalAlignment="Top" Height="25" Width="96"/>
+            <Label Content="训练评价：" HorizontalAlignment="Left" Margin="0,220,0,0" VerticalAlignment="Top" Height="25" Width="96"/>
+            <Label Content="训练评分：" HorizontalAlignment="Left" Margin="0,250,0,0" VerticalAlignment="Top" Height="25" Width="96"/>
+            <Label Content="错误次数：" HorizontalAlignment="Left" Margin="0,280,0,0" VerticalAlignment="Top" Height="25" Width="96"/>
+            <Label Content="是否提交：" HorizontalAlignment="Left" Margin="0,310,0,0" VerticalAlignment="Top" Height="25" Width="96"/>
+            <TextBlock x:Name="dev_name" HorizontalAlignment="Left" Margin="72,15,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="25" Width="349"/>
+            <TextBlock x:Name="dev_sn" HorizontalAlignment="Left" Margin="72,45,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="25" Width="349"/>
+            <TextBlock x:Name="dev_ip" HorizontalAlignment="Left" Margin="72,75,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="25" Width="349"/>
+            <TextBlock x:Name="dev_userName" HorizontalAlignment="Left" Margin="72,105,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="25" Width="349"/>
+            <TextBlock x:Name="course_type" HorizontalAlignment="Left" Margin="72,135,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="25" Width="349"/>
+            <TextBlock x:Name="course_name" HorizontalAlignment="Left" Margin="72,165,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="25" Width="349"/>
+            <TextBlock x:Name="course_time" HorizontalAlignment="Left" Margin="72,195,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="25" Width="349"/>
+            <TextBlock x:Name="rcd_remark" HorizontalAlignment="Left" Margin="72,225,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="25" Width="349"/>
+            <TextBlock x:Name="rcd_score" HorizontalAlignment="Left" Margin="72,255,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="25" Width="349"/>
+            <TextBlock x:Name="rcd_faluts" HorizontalAlignment="Left" Margin="72,285,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="25" Width="349"/>
+            <TextBlock x:Name="rcd_Update" HorizontalAlignment="Left" Margin="72,315,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="25" Width="349"/>
+        </Grid>
+        <Image x:Name="qrcode" HorizontalAlignment="Left" Height="152" Margin="635,10,0,0" VerticalAlignment="Top" Width="147"/>
+        <Grid HorizontalAlignment="Left" Height="620" VerticalAlignment="Top" Width="177" Grid.RowSpan="2" Margin="0,10,0,0">
+            <Button x:Name="device1" Tag="CAR_DT_2022N001" Click="Click_Button" HorizontalAlignment="Left" Height="110" Margin="13,10,0,0" VerticalAlignment="Top" Width="110"/>
+            <Button x:Name="device2" Tag="CAR_DT_2022N002" Click="Click_Button" HorizontalAlignment="Left" Height="110" Margin="13,132.5,0,0" VerticalAlignment="Top" Width="110"/>
+            <Button x:Name="device3" Tag="CAR_DT_2022N003" Click="Click_Button" HorizontalAlignment="Left" Height="110" Margin="13,255,0,0" VerticalAlignment="Top" Width="110"/>
+            <Button x:Name="device4" Tag="CAR_DT_2022N004" Click="Click_Button" HorizontalAlignment="Left" Height="110" Margin="13,377.5,0,0" VerticalAlignment="Top" Width="110"/>
+            <Button x:Name="device5" Tag="CAR_DT_2022N005" Click="Click_Button" HorizontalAlignment="Left" Height="110" Margin="13,500,0,0" VerticalAlignment="Top" Width="110"/>
+            <Border x:Name="CAR_DT_2022N001" CornerRadius="15" HorizontalAlignment="Left" Height="36" Margin="134,83,0,0" VerticalAlignment="Top" Width="36" RenderTransformOrigin="0.568,0.811"/>
+            <Border x:Name="CAR_DT_2022N002" CornerRadius="15" HorizontalAlignment="Left" Height="36" Margin="134,206,0,0" VerticalAlignment="Top" Width="36" RenderTransformOrigin="2.455,2.054"/>
+            <Border x:Name="CAR_DT_2022N003" CornerRadius="15" HorizontalAlignment="Left" Height="36" Margin="134,328,0,0" VerticalAlignment="Top" Width="36" RenderTransformOrigin="2.455,2.054"/>
+            <Border x:Name="CAR_DT_2022N004" CornerRadius="15" HorizontalAlignment="Left" Height="36" Margin="134,450,0,0" VerticalAlignment="Top" Width="36" RenderTransformOrigin="2.455,2.054"/>
+            <Border x:Name="CAR_DT_2022N005" CornerRadius="15" HorizontalAlignment="Left" Height="36" Margin="134,573,0,0" VerticalAlignment="Top" Width="36" RenderTransformOrigin="2.455,2.054"/>
+        </Grid>
+        <Button x:Name="Clear" Content="Clear" HorizontalAlignment="Left" Margin="697,169,0,0" Grid.Row="1" VerticalAlignment="Top" Width="85" Click="Button_Click_Clear" Height="32"/>
+        <CheckBox x:Name="FilterQuery" Content="CheckBox" HorizontalAlignment="Left" Margin="697,126,0,0" Grid.Row="1" VerticalAlignment="Top" IsChecked="True"/>
+        <TextBox x:Name="UdpRecvs" HorizontalAlignment="Left" Height="273" Margin="193,25,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="498" Grid.Row="1"/>
+        <Label Content="网络状态：" HorizontalAlignment="Left" Margin="642,216,0,0" VerticalAlignment="Top" Height="24" Width="63" RenderTransformOrigin="0.349,1.125"/>
+        <TextBlock x:Name="web_status" HorizontalAlignment="Left" Margin="707,221,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="25" Width="79"/>
+    </Grid>
+</Window>

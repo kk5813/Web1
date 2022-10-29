@@ -1,0 +1,42 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="660.59" Width="800">
+    <Grid>
+        <GroupBox Header="Status" HorizontalAlignment="Left" Height="58" Margin="41,141,0,0" VerticalAlignment="Top" Width="386" RenderTransformOrigin="0.405,-1.334"/>
+        <Button Content="Query" HorizontalAlignment="Left" Margin="696,17,0,0" VerticalAlignment="Top" Width="75" Height="24" Click="Button_Click" RenderTransformOrigin="0.726,-0.023"/>
+        <TextBox x:Name="Results" HorizontalAlignment="Left" Height="79" Margin="41,46,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="386"/>
+        <TextBlock x:Name="tkExpires" HorizontalAlignment="Left" Margin="142,15,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="31" Width="136"/>
+        <TextBox x:Name="ReturnData" HorizontalAlignment="Left" Height="44" Margin="48,229,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="723" RenderTransformOrigin="0.43,0.56"/>
+        <Label Content="Access_Token" HorizontalAlignment="Left" Margin="41,10,0,0" VerticalAlignment="Top" Width="96"/>
+        <ListBox x:Name="devs" HorizontalAlignment="Left" Height="83" Margin="448,46,0,0" VerticalAlignment="Top" Width="323"/>
+        <Button Content="Get" HorizontalAlignment="Left" Margin="319,15,0,0" VerticalAlignment="Top" Width="108" Height="27" Click="Button_Click_1"/>
+        <Label Content="Devices" HorizontalAlignment="Left" Margin="448,15,0,0" VerticalAlignment="Top"/>
+        <Label Content="HTTP" HorizontalAlignment="Left" Margin="41,204,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="stNormal" Checked="RadioButton_Checked" Content="normal" HorizontalAlignment="Left" Margin="48,168,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="stReady" Checked="RadioButton_Checked" Content="ready" HorizontalAlignment="Left" Margin="142,168,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="stBusy" Checked="RadioButton_Checked" Content="busy" HorizontalAlignment="Left" Margin="232,168,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.832,0.333"/>
+        <Button Content="Change" HorizontalAlignment="Left" Margin="319,161,0,0" VerticalAlignment="Top" Width="97" Height="28" Click="Button_Click_2"/>
+        <Button Content="Send UDP" HorizontalAlignment="Left" Margin="696,301,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-6.877,8.347" Click="Button_Click_3" Height="33"/>
+        <TextBox x:Name="UdpSend" HorizontalAlignment="Left" Height="30" Margin="47,303,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="634" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.054"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox x:Name="UdpRecvs" HorizontalAlignment="Left" Height="236" Margin="48,341,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="634"/>
+        <Label Content="CarDevice" HorizontalAlignment="Left" Margin="48,577,0,0" VerticalAlignment="Top"/>
+        <Button Content="Clear" HorizontalAlignment="Left" Margin="696,399,0,0" VerticalAlignment="Top" Width="75" Height="36" Click="Button_Click_4"/>
+        <CheckBox x:Name="FilterQuery" Content="CheckBox" HorizontalAlignment="Left" Margin="687,379,0,0" VerticalAlignment="Top" IsChecked="True"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="8" Margin="0,278,0,0" VerticalAlignment="Top" Width="792" Background="#FF837B7B"/>
+        <Button Content="User" HorizontalAlignment="Left" Margin="696,546,0,0" VerticalAlignment="Top" Width="75" Height="31" Click="Button_Click_5" RenderTransformOrigin="0.427,2.677"/>
+    </Grid>
+</Window>
